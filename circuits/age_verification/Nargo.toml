@@ -1,0 +1,14 @@
+[package]
+name = "age_verification"
+type = "bin"
+authors = ["zkKYC Identity Layer"]
+compiler_version = ">=1.0.0-beta.19"
+license = "MIT"
+description = "Selective disclosure age verification circuit for zkKYC"
+
+[dependencies]
+# Standard library is included by default
+
+[profile.release]
+# Enable optimizations for smaller proofs and faster verification
+opt_level = 3
